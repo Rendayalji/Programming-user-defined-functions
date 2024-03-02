@@ -45,22 +45,20 @@ def hotel_cost(num_nights):
     return tot_hotel_cost
 
 
-
 def plane_cost(city_flight):
     """ Function for plane (flight) cost will return a price in £
     depending on the user's input for city_flight.
     """
-    if city_flight == 1: # Flight to London
+    if city_flight == 1:  # Flight to London
         return 500
-    elif city_flight == 2: # Flight to Paris
+    elif city_flight == 2:  # Flight to Paris
         return 400
-    elif city_flight == 3: # Flight to New York
+    elif city_flight == 3:  # Flight to New York
         return 800
     else:
         return 0
 
-
-  
+ 
 def car_rental(rental_days):   
     """Function for calculating total car rental cost in £.
     The price per day is £150.  The number of rental_days will be taken
@@ -68,7 +66,6 @@ def car_rental(rental_days):
     """ 
     tot_car_rental = (rental_days) * 150
     return tot_car_rental
-
 
 
 def holiday_cost(hotel_cost, plane_cost,car_rental):
@@ -86,15 +83,15 @@ print()
 
 city_flight = ""
 
-while city_flight != 4: # The below user input will be requested until
-                        # the user enters 4 to quit.
+while city_flight != 4:  # The below user input will be requested until
+                         # the user enters 4 to quit.
     
     print("Which city would you like to visit?\n")
     city_flight = int(input("Please enter a number 1 , 2, 3 or 4:\n\n\
 1 for London city break\n2 for Paris city break\n\
 3 for New York city break\n4 to  quit\n\n"))
     
-    if city_flight == 1: # User input 1 for London city break.
+    if city_flight == 1:  # User input 1 for London city break.
         num_nights = int(input("\nEnter a number. How many nights would \
 you like to stay in London?:\nNight(s): "))
         rental_days = int(input("\nEnter a number.  How many days would \
@@ -109,7 +106,7 @@ you like to rent a car?\nCar rental day(s): "))
             plane_cost(city_flight), car_rental(rental_days))}\n")
         break
     
-    elif city_flight == 2: # User input 2 for Paris city break.
+    elif city_flight == 2:  # User input 2 for Paris city break.
         num_nights = int(input("\nEnter a number. How many nights would \
 you like to stay in Paris?:\nNight(s): "))
         rental_days = int(input("\nEnter a number.  How many days would \
@@ -121,7 +118,7 @@ you like to rent a car?\nCar rental day(s): "))
             plane_cost(city_flight), car_rental(rental_days))}\n")
         break
     
-    elif city_flight == 3: # User input 3 for New York city break.
+    elif city_flight == 3:  # User input 3 for New York city break.
         num_nights = int(input("\nEnter a number. How many nights would \
 you like to stay in New York?:\nNight(s): "))
         rental_days = int(input("\nEnter a number.  How many days would \
