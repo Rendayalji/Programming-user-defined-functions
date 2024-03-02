@@ -47,7 +47,7 @@ def hotel_cost(num_nights):
 
 
 def plane_cost(city_flight):
-    """Function for plane (flight) cost will return a price in £
+    """ Function for plane (flight) cost will return a price in £
     depending on the user's input for city_flight.
     """
     if city_flight == 1: # Flight to London
@@ -61,19 +61,18 @@ def plane_cost(city_flight):
 
 
   
-def car_rental(rental_days):    
+def car_rental(rental_days):   
     """Function for calculating total car rental cost in £.
     The price per day is £150.  The number of rental_days will be taken
-    from user input.
-    """  
+    from user input.   
+    """ 
     tot_car_rental = (rental_days) * 150
     return tot_car_rental
 
 
 
 def holiday_cost(hotel_cost, plane_cost,car_rental):
-    """Function for calculating the total holiday cost in £.
-    """
+    """Function for calculating the total holiday cost in £."""
     tot_holiday_cost = hotel_cost + plane_cost + car_rental
     return tot_holiday_cost
 
