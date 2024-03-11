@@ -11,13 +11,13 @@ The Program is written in the Python and makes use of functions.
 The following functions have been set up:
 
 
-hotel_cost()
+- hotel_cost()
 
-plane_cost()
+- plane_cost()
 
-car_rental()
+- car_rental()
 
-total_holiday_cost()
+- total_holiday_cost()
 
 
 
